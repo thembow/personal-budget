@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage - Personal Budget</title>
-    <meta name="description" content="A free personal budger app">
+    <meta name="description" content="A free personal budget app">
     <meta name="keywords" content="app free budget finance">
+    <meta name="rating" content="general">
+    <!-- This is a SEO change. Added rating meta tag for general audience -->
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
 </head>
@@ -17,7 +19,8 @@
             <li><a href="/pb/public/index.html">Home</a></li>
             <li><a href="/pb/public/about.html">About</a></li>
             <li><a href="/pb/public/login.html">Login</a></li>
-            <li><a href="https://google.com">Google</a></li>
+            <li><a rel="nofollow" href="https://google.com">Google</a></li>
+            <!-- This is a SEO change. Added rel="nofollow" to external link to avoid associating with google -->
             <!-- This is an A11y Change. allows users to skip to main content -->
             <li><a href="#main" class="skip">Skip to content</a></li>
         </ul>
