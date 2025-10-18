@@ -43,7 +43,7 @@ color = d3.scale.ordinal().range(colors);
             return axios.get('http://localhost:3000/budget') // afaik u cant get this to work w/o async code
             .then(function (res) {
                 for (var i = 0; i < res.data.myBudget.length; i++) {
-                    dataSourceD3.push({ label: res.data.myBudget[i].title, value: res.data.myBudget[i].budget });
+                    dataSourceD3.push({ label: res.data.myBudget[i].title, value: res.data.myBudget[i].value });
                     //setup labels to send to graph
                     dataSourceLabels[i] = res.data.myBudget[i].title;
                     //this is for color domain weirdness 

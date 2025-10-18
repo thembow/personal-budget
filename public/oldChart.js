@@ -29,7 +29,7 @@ var dataSource = {
             axios.get('http://localhost:3000/budget')
             .then(function (res) {
                 for (var i = 0; i < res.data.myBudget.length; i++) {
-                    dataSource.datasets[0].data[i] = res.data.myBudget[i].budget;
+                    dataSource.datasets[0].data[i] = res.data.myBudget[i].value;
                     dataSource.labels[i] = res.data.myBudget[i].title;
                     createChart();
                 }
